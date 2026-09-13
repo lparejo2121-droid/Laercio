@@ -1,0 +1,8 @@
+{
+  "name": "laercio-ceabas-core",
+  "version": "7.8.5",
+  "type": "module",
+  "dependencies": {
+    "ethers": "^6.13.0"
+  }
+}
