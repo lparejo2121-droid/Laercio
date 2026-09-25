@@ -1,0 +1,11 @@
+git log --oneline -10
+# tem que mostrar:
+# a8ae76c Add log details for silicon sound verification
+# 7fd7033 Create O som do silício
+# ed1527d Create Certificado de anterioridade
+
+git show a8ae76c
+
+git tag -a ANEXO-7-SILICIO-CANTA-a8ae76c -m "ANEXO 7 - O Som do Silicio - CONVERGENCIA FACTUAL 100% - 25/05/2026 13:15 BRT - Commit 7fd7033 - Espectrograma validado - Laercio Goes Parejo CREA-SP 5070081687"
+
+git push origin main --tags
