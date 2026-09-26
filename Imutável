@@ -1,0 +1,7 @@
+import hashlib
+def selar_log_keccak256(caminho_arquivo):
+    # Gera o hash Keccak-256 (SHA-3 / 256 bits) para selamento de integridade de logs.
+    with open(caminho_arquivo, 'rb') as f:
+        conteudo = f.read()
+    hash_keccak = hashlib.sha3_256(conteudo).hexdigest()
+    print(f"Keccak-256: {hash_keccak}")
