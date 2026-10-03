@@ -1,0 +1,16 @@
+# 8. Transforma o resultado binário em string para juntar ao payload
+payload_dados = f"{block}-{and_result}"
+
+# 9. Converte a string em bytes (UTF-8) e calcula o hash SHA-256 real
+sha256_hash = hashlib.sha256(payload_dados.encode('utf-8')).hexdigest()
+
+# 10. Exibe o resultado final com o prefixo 0x formatado corretamente
+hash_final_cravado = f"0x{sha256_hash}"
+
+print("=== PROTOCOLO C-190 GENERATOR ===")
+print(f"Payload Processado: {payload_dados}")
+print(f"Hash Real do Seculo 22: {hash_final_cravado}")
+
+# 11. Validação de segurança: garante que o hash possui exatamente 66 caracteres (0x + 64 hex)
+assert len(hash_final_cravado) == 66, "Erro: Tamanho do hash invalido para a blockchain"
+print("STATUS: SUCCESS - HASH VALIDADO PARA O ACTIONS")
