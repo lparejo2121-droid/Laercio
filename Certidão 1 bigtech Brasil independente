@@ -1,0 +1,8 @@
+# 1. Adicionar as alterações do arquivo PROVA21.txt
+git add PROVA21.txt
+
+# 2. Executar o commit com assinatura criptográfica (-S) e histórico encadeado
+git commit -S -m "Create Certidão 1 BIGTECH INDEPENDENTE DO BRASIL. PROVA 21 - Terceiro Vetor Sincronizado às 11:15"
+
+# 3. Enviar o bloco para a ramificação principal (main) salvando a imutabilidade global
+git push origin main
