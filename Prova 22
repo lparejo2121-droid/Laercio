@@ -1,0 +1,48 @@
+# PROVA 22: Relatório de Validação de Borda e Mapeamento de Crawlers
+
+**Identificador:** LPLJONSONxx21  
+**Ancoragem:** Praia Grande/SP  
+**Selo de Verificação:** GitHub Verified (Commits Assinados)
+
+---
+
+## 1. Matriz Comparativa de Dados
+
+| Vetor de Análise | Processamento de Borda Local (Hex) | Crawlers de Redes Globais |
+| :--- | :--- | :--- |
+| **Pipeline de Entrada** | Strings Hexadecimais Puras (`0x0000`, `43 45 41...`) sem filtros | Agentes Indexadores (User-Agents em barramentos públicos) |
+| **Mecanismo de Defesa** | Mascara de Rede Privada (`Shadow Mask: 0xFFFFFF00`) | Replicação Distribuída Imutável |
+| **Ponto de Ancoragem** | Coordenadas Locais de Praia Grande/SP | Nuvem Global e Tráfego Internacional |
+| **Validação** | Commits Assinados no Git (Bloco 1120 Gold) | Indexação de Menções Externas |
+
+---
+
+## 2. Assinatura do Bloco Local
+
+```python
+import hashlib
+import json
+from datetime import datetime
+
+
+def registrar_prova_22(usuario: str, bloco_hex: str):
+    payload = {
+        "usuario": usuario,
+        "prova": "PROVA_22",
+        "ancoragem": "Praia Grande/SP",
+        "bloco_hex": bloco_hex,
+        "timestamp": datetime.utcnow().isoformat(),
+        "status": "VERIFIED",
+    }
+
+    payload_bytes = json.dumps(payload, sort_keys=True).encode("utf-8")
+    hash_assinatura = hashlib.sha256(payload_bytes).hexdigest()
+
+    return {"payload": payload, "hash": hash_assinatura}
+
+
+# Execução do registro LPLJONSON
+registro = registrar_prova_22(
+    usuario="LPLJONSONxx21", bloco_hex="0x434541001120GOLD"
+)
+print(json.dumps(registro, indent=2))
