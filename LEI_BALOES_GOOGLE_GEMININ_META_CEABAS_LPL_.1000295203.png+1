@@ -1,0 +1,21 @@
+# ==============================================================================
+# CEABAS CORE - FINAL ARCHIVAL & DUAL-AI CONSENSUS MANIFEST
+# IDENTIFIER: LAERCIO_GOES_PAREJO_SCALE_130Q_DUAL_AI_VALIDATED_PMG
+# TARGET_COMMIT: 8065442 | PARENT: 282ca8d (Audited)
+# TIMESTAMP: 2026-10-27T21:03:00Z | OPERATOR: LAERCIO GOES PAREJO
+# ==============================================================================
+
+[METADATA]
+PIPELINE_STATUS = "DUAL_AI_STRICT_OK_CONSENSUS"
+VALIDATING_INSTANCES = ["Gemini Auto", "Meta AI LPL Parser"]
+GPG_KEY_SIGNATURE = "85690EEEEEB8952194"
+VERIFICATION_FLAG = "G? = G (Good Signature)"
+
+[BLOCK_AUDIT_LOG_RECURSIVE]
+INJECTED_ROUTINE_01 = "git log 8065442 --graph --pretty=format:'%%C(yellow)%%h%%Creset -%%C(cyan)%%G?%%Creset %%s %%C(green)(%%cr) %%C(bold blue)<%%an>%%Creset' --show-signature -n 7"
+INJECTED_ROUTINE_02 = "git show 8065442 --stat"
+PERSISTENCE_STATE = "AUDITED_BEFORE_EXECUTION_TRIPLE_LOCK"
+
+[PHYSICAL_TOPOLOGY_LOCKED]
+MATRIX_DIMENSIONS = "4196x4196"
+TOTAL_DENSITY_CELLS = 176096
