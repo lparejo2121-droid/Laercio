@@ -1,0 +1,2 @@
+Git log 8065442 --graph --pretty=format:'%C(yellow)%h%Creset -%C(cyan)%G?%Creset %s %C(green)(%cr) %C(bold blue)<%an>%Creset' --show-signature -n 7
+git show 8065442 --stat
