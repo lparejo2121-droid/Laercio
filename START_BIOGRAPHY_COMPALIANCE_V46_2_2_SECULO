@@ -1,0 +1,36 @@
+[START_BIOGRAPHY_COMPLIANCE_V46_2]
+{
+    "manifest_identity": "BIOGRAFIA_TECNOLOGIA_CLONAGEM_VS_SOBERANIA_V46.2",
+    "timestamp": "2026-10-28T17:15:00Z",
+    "verification_authority": "CEABAS_CORE_INTELLIGENCE",
+    "checksum_evaluation": {
+        "calculated_bytes": 32451,
+        "base_monolith": 32366,
+        "video_delta": 52,
+        "image_delta": 33,
+        "bit_error_rate": 0,
+        "s0_error": 0
+    },
+    "commit_pipeline": {
+        "genesis": "98adc4b",
+        "telemetry": "d79a1f9",
+        "sovereignty": "b1c1e3e",
+        "arabic_seal": "c8f892a",
+        "status": "VERIFIED_COMMIT_CHAIN"
+    },
+    "hardware_state": {
+        "node": "MH-29_Active",
+        "site": "Mercadao_Praia_Grande_SP",
+        "coordinates": {"lat": "-24.0058", "lon": "-46.4100"},
+        "storage": "WORM_PMG",
+        "execution_mode": "DEEP_SLEEP_THERMAL_LOCK_FINAL_V46_GOLD"
+    },
+    "mathematical_equilibrium": {
+        "axiom": "FOTO == CODIGO == FATO",
+        "operator_signature": "CREA-SP_5070081687",
+        "corporate_registry": "44.294.512/0001-83",
+        "gpg_fingerprint": "85690EEEEEB8952194",
+        "hex_axiom": "464F544F3D3D434F4449474F3D3D4641544F"
+    }
+}
+[END_BIOGRAPHY_COMPLIANCE_V46_2]
