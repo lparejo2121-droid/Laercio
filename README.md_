@@ -1,0 +1,14 @@
+# CONSELHO-CEABAS-GOLD
+
+Repositório dedicado à validação criptográfica de integridade de arquivos e automação de auditoria via GitHub Actions.
+
+## Estrutura do Projeto
+- `.github/workflows/show-signature.yml`: Pipeline de CI/CD que verifica a assinatura GPG do último commit e executa a auditoria automatizada a cada push na branch `main`.
+- `validar_ancoras.py`: Script em Python que calcula o hash SHA-256 de todos os arquivos armazenados na pasta `imagens-ancora/` e gera um manifesto estruturado em `anchor.json`.
+
+## Como Executar Localmente
+1. Adicione os arquivos desejados dentro do diretório `imagens-ancora/`.
+2. Execute o script de validação:
+   ```bash
+   python validar_ancoras.py
+   ```
